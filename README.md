@@ -132,6 +132,10 @@ you can limit the bounding box and zoom levels of what you want to generate (`do
 docker-compose run generate-vectortiles
 ```
 
+## Custom download
+
+If you download your own pbf, you need to get an update `docker-compose-config.yml` in place, as it won't be generated for you. You can run `./custom-region-prep.sh export_name(STRING) min_lng(NUMEBR) min_lat(NUMEBR) max_lng(NUMEBR) max_lat(NUMEBR)`, and the `./quickstart export_name` where export name is as `export_name.osm.pbf` in the data directory.
+
 ## License
 
 All code in this repository is under the [BSD license](./LICENSE.md) and the cartography decisions encoded in the schema and SQL are licensed under [CC-BY](./LICENSE.md).
