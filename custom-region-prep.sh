@@ -23,7 +23,7 @@ while read line; do
   export $line
 done <.env
 
-sudo cat >data/docker-compose-config.yml <<EOF
+cat >data/docker-compose-config.yml <<EOF
 version: "2"
 services:
   generate-vectortiles:
